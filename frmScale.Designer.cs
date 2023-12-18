@@ -41,8 +41,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtY1 = new System.Windows.Forms.TextBox();
             this.txtX1 = new System.Windows.Forms.TextBox();
-            this.btnDDA = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDraw = new System.Windows.Forms.Button();
+            this.pnlGraph = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label9
@@ -177,25 +177,25 @@
             this.txtX1.Size = new System.Drawing.Size(91, 23);
             this.txtX1.TabIndex = 58;
             // 
-            // btnDDA
+            // btnDraw
             // 
-            this.btnDDA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
-            this.btnDDA.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDDA.ForeColor = System.Drawing.Color.White;
-            this.btnDDA.Location = new System.Drawing.Point(688, 601);
-            this.btnDDA.Name = "btnDDA";
-            this.btnDDA.Size = new System.Drawing.Size(232, 60);
-            this.btnDDA.TabIndex = 57;
-            this.btnDDA.Text = "Drow";
-            this.btnDDA.UseVisualStyleBackColor = false;
+            this.btnDraw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
+            this.btnDraw.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDraw.ForeColor = System.Drawing.Color.White;
+            this.btnDraw.Location = new System.Drawing.Point(688, 601);
+            this.btnDraw.Name = "btnDraw";
+            this.btnDraw.Size = new System.Drawing.Size(232, 60);
+            this.btnDraw.TabIndex = 57;
+            this.btnDraw.Text = "Draw";
+            this.btnDraw.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // pnlGraph
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(132)))), ((int)(((byte)(138)))));
-            this.panel1.Location = new System.Drawing.Point(38, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1041, 500);
-            this.panel1.TabIndex = 56;
+            this.pnlGraph.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(132)))), ((int)(((byte)(138)))));
+            this.pnlGraph.Location = new System.Drawing.Point(38, 65);
+            this.pnlGraph.Name = "pnlGraph";
+            this.pnlGraph.Size = new System.Drawing.Size(1041, 500);
+            this.pnlGraph.TabIndex = 56;
             // 
             // frmScale
             // 
@@ -215,8 +215,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtY1);
             this.Controls.Add(this.txtX1);
-            this.Controls.Add(this.btnDDA);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnDraw);
+            this.Controls.Add(this.pnlGraph);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmScale";
             this.Text = "frmScale";
@@ -240,7 +240,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtY1;
         private System.Windows.Forms.TextBox txtX1;
-        private System.Windows.Forms.Button btnDDA;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnDraw;
+        private System.Windows.Forms.Panel pnlGraph;
     }
 }

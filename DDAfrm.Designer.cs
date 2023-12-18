@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDDA = new System.Windows.Forms.Button();
+            this.pnlGraph = new System.Windows.Forms.Panel();
+            this.btnDraw = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,25 +45,26 @@
             this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlGraph
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(132)))), ((int)(((byte)(138)))));
-            this.panel1.Location = new System.Drawing.Point(36, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1041, 500);
-            this.panel1.TabIndex = 0;
+            this.pnlGraph.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(132)))), ((int)(((byte)(138)))));
+            this.pnlGraph.Location = new System.Drawing.Point(36, 65);
+            this.pnlGraph.Name = "pnlGraph";
+            this.pnlGraph.Size = new System.Drawing.Size(1041, 500);
+            this.pnlGraph.TabIndex = 0;
             // 
-            // btnDDA
+            // btnDraw
             // 
-            this.btnDDA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
-            this.btnDDA.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDDA.ForeColor = System.Drawing.Color.White;
-            this.btnDDA.Location = new System.Drawing.Point(686, 601);
-            this.btnDDA.Name = "btnDDA";
-            this.btnDDA.Size = new System.Drawing.Size(232, 60);
-            this.btnDDA.TabIndex = 2;
-            this.btnDDA.Text = "Drow";
-            this.btnDDA.UseVisualStyleBackColor = false;
+            this.btnDraw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
+            this.btnDraw.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDraw.ForeColor = System.Drawing.Color.White;
+            this.btnDraw.Location = new System.Drawing.Point(686, 601);
+            this.btnDraw.Name = "btnDraw";
+            this.btnDraw.Size = new System.Drawing.Size(232, 60);
+            this.btnDraw.TabIndex = 2;
+            this.btnDraw.Text = "Draw";
+            this.btnDraw.UseVisualStyleBackColor = false;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // label5
             // 
@@ -214,8 +215,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtY1);
             this.Controls.Add(this.txtX1);
-            this.Controls.Add(this.btnDDA);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnDraw);
+            this.Controls.Add(this.pnlGraph);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DDAfrm";
             this.Text = "DDAfrm";
@@ -226,8 +227,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDDA;
+        private System.Windows.Forms.Panel pnlGraph;
+        private System.Windows.Forms.Button btnDraw;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

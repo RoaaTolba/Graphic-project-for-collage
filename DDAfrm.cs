@@ -16,5 +16,50 @@ namespace Dilevered_project_Graphics
         {
             InitializeComponent();
         }
+
+        private void DDAline(int X1,int Y1,int X2,int Y2)
+        {
+            Pen pen = new Pen(Color.White, 5);
+
+            int dx=X2- X1;
+            int dy=Y2- Y1;
+            int step;
+
+            if (Math.Abs(dx) > Math.Abs(dy))
+                step = Math.Abs(dx);
+            else
+                step = Math.Abs(dy);
+
+            float xIncrement = (float)dx / step;
+            float yIncrement = (float)dy / step;
+
+            float x = X1;
+            float y = Y1;
+
+            for (int i = 0; i < step; i++)
+            {
+                x+= xIncrement;
+                y+= yIncrement;
+            }
+
+            PointF pnt1 = new PointF(X1, Y1);
+            PointF pnt2 = new PointF(x,y);
+            pnlGraph.CreateGraphics().DrawLine(pen , pnt1,pnt2);
+
+        }
+
+            private void btnDraw_Click(object sender, EventArgs e)
+            {
+            
+
+                int X1 = int.Parse(txtX1.Text);
+                int Y1 = int.Parse(txtY1.Text);
+                int X2 = int.Parse(txtX2.Text);
+                int Y2 = int.Parse(txtY2.Text);
+
+                DDAline(X1, Y1, X2, Y2);
+
+
+            }
     }
 }

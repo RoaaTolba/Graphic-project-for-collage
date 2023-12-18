@@ -37,8 +37,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlForForms.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnlChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlForForms
@@ -148,11 +152,33 @@
             // 
             // pnlChildForm
             // 
+            this.pnlChildForm.Controls.Add(this.label2);
+            this.pnlChildForm.Controls.Add(this.pictureBox1);
             this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlChildForm.Location = new System.Drawing.Point(232, 0);
             this.pnlChildForm.Name = "pnlChildForm";
             this.pnlChildForm.Size = new System.Drawing.Size(1117, 692);
             this.pnlChildForm.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Dilevered_project_Graphics.Properties.Resources.icons8_draw_96;
+            this.pictureBox1.Location = new System.Drawing.Point(474, 260);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(97, 105);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 35F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
+            this.label2.Location = new System.Drawing.Point(380, 352);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(296, 63);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "...Graphics...";
             // 
             // Form1
             // 
@@ -167,6 +193,9 @@
             this.pnlForForms.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pnlChildForm.ResumeLayout(false);
+            this.pnlChildForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,6 +211,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnDDA;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

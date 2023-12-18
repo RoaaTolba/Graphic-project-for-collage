@@ -16,6 +16,14 @@ namespace Dilevered_project_Graphics
         {
             InitializeComponent();
         }
+        //private void DrowLine(int X1, int Y1, int X2, int Y2)
+        //{
+        //    Pen pen = new Pen(Color.Blue, 5);
+        //    PointF pnt1 = new PointF(X1, Y1);
+        //    PointF pnt2 = new PointF(X2, Y2);
+        //    //pnlGraph.CreateGraphics().DrawLine(pen, pnt1, pnt2);
+        //}
+
 
         private Form activeForm = null;
         private void OpenChildForm(Form childForm)
