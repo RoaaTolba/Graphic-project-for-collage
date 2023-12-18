@@ -1,0 +1,15 @@
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered project Graphics.csproj.AssemblyReference.cache
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered_project_Graphics.Form1.resources
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered_project_Graphics.Properties.Resources.resources
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered project Graphics.csproj.GenerateResource.cache
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered project Graphics.csproj.CoreCompileInputs.cache
+C:\Users\Roaa\source\repos\Dilevered project Graphics\bin\Debug\Dilevered project Graphics.exe.config
+C:\Users\Roaa\source\repos\Dilevered project Graphics\bin\Debug\Dilevered project Graphics.exe
+C:\Users\Roaa\source\repos\Dilevered project Graphics\bin\Debug\Dilevered project Graphics.pdb
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered_project_Graphics.DDAfrm.resources
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered project Graphics.exe
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered project Graphics.pdb
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered_project_Graphics.frmBresenham.resources
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered_project_Graphics.frmCohan.resources
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered_project_Graphics.frmMidPoint.resources
+C:\Users\Roaa\source\repos\Dilevered project Graphics\obj\Debug\Dilevered_project_Graphics.frmScale.resources
