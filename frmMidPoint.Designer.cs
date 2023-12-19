@@ -188,6 +188,7 @@
             this.btnDraw.TabIndex = 42;
             this.btnDraw.Text = "Draw";
             this.btnDraw.UseVisualStyleBackColor = false;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // pnlGraph
             // 
