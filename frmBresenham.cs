@@ -24,7 +24,6 @@ namespace Dilevered_project_Graphics
             double dy = Y2 - Y1;
             double Pk = (2*dy) - dx;
 
-            int flag = 0;
             int x=X1, y=Y1;
 
 
@@ -41,7 +40,6 @@ namespace Dilevered_project_Graphics
                     Pk = Pk + (2 *( dy -dx));
                     y++;
                 }
-               // pnt1 = new PointF(X1, Y1);
                 pnlGraph.CreateGraphics().FillRectangle(Brushes.White,x,y,5,5);
 
                 //pnlGraph.CreateGraphics().DrawLine(pen, pnt1, pnt2);

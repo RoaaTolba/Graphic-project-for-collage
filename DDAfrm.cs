@@ -40,11 +40,12 @@ namespace Dilevered_project_Graphics
             {
                 x+= xIncrement;
                 y+= yIncrement;
+                pnlGraph.CreateGraphics().FillRectangle(Brushes.White, x, y, 5, 5);
             }
 
-            PointF pnt1 = new PointF(X1, Y1);
-            PointF pnt2 = new PointF(x,y);
-            pnlGraph.CreateGraphics().DrawLine(pen , pnt1,pnt2);
+            //PointF pnt1 = new PointF(X1, Y1);
+            //PointF pnt2 = new PointF(x,y);
+            //pnlGraph.CreateGraphics().DrawLine(pen , pnt1,pnt2);
 
         }
 

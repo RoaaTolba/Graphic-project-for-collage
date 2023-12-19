@@ -76,11 +76,11 @@
     <Compile Include="frmMidPoint.Designer.cs">
       <DependentUpon>frmMidPoint.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmScale.cs">
+    <Compile Include="frmTranslate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmScale.Designer.cs">
-      <DependentUpon>frmScale.cs</DependentUpon>
+    <Compile Include="frmTranslate.Designer.cs">
+      <DependentUpon>frmTranslate.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,8 +99,8 @@
     <EmbeddedResource Include="frmMidPoint.resx">
       <DependentUpon>frmMidPoint.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmScale.resx">
-      <DependentUpon>frmScale.cs</DependentUpon>
+    <EmbeddedResource Include="frmTranslate.resx">
+      <DependentUpon>frmTranslate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

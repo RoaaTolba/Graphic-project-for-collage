@@ -37,8 +37,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlChildForm = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlForForms.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlChildForm.SuspendLayout();
@@ -70,7 +70,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(232, 60);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Scale";
+            this.button5.Text = "Translate";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -160,15 +160,6 @@
             this.pnlChildForm.Size = new System.Drawing.Size(1117, 692);
             this.pnlChildForm.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Dilevered_project_Graphics.Properties.Resources.icons8_draw_96;
-            this.pictureBox1.Location = new System.Drawing.Point(474, 260);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 105);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -180,6 +171,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "...Graphics...";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Dilevered_project_Graphics.Properties.Resources.icons8_draw_96;
+            this.pictureBox1.Location = new System.Drawing.Point(474, 260);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(97, 105);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +189,7 @@
             this.Controls.Add(this.pnlForForms);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Graphics Project 2023";
             this.pnlForForms.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
