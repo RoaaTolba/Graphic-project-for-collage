@@ -16,30 +16,51 @@ namespace Dilevered_project_Graphics
         {
             InitializeComponent();
         }
-        private void MidPoint(int X1, int Y1, int X2, int Y2)
+        void DrawPixels(int x, int y, int X1, int Y1)
         {
-            double dx = X2 - X1;
-            double dy = Y2 - Y1;
-            double Di = (2 * dy) - dx;
-            double Dd = (2 * dy - dx);
 
-            int x = X1, y = Y1;
 
-            while (x < X2)
+            //picC.SetPixel(Brushes.White, x + X1, y + Y1, 5, 5);
+            //picC.SetPixel(Brushes.White, x + X1, -1 * y + Y1, 5, 5);
+            //picC.SetPixel(Brushes.White, -1 * x + X1, y + Y1, 5, 5);
+            //picC.SetPixel(Brushes.White, -1 * x + X1, -1 * y + Y1, 5, 5);
+            //picC.SetPixel(Brushes.White, y + X1, x + Y1, 5, 5);
+            //picC.SetPixel(Brushes.White, -1 * y + X1, x + Y1, 5, 5);
+            //picC.SetPixel(Brushes.White, y + X1, -1 * x + Y1, 5, 5);
+            //picC.SetPixel(Brushes.White, -1 * y + X1, -1 * x + Y1, 5, 5);
+
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, x + X1, y + Y1, 5, 5);
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, x + X1, -1 * y + Y1, 5, 5);
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, -1 * x + X1, y + Y1, 5, 5);
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, -1 * x + X1, -1 * y + Y1, 5, 5);
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, y + X1, x + Y1, 5, 5);
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, -1 * y + X1, x + Y1, 5, 5);
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, y + X1, -1 * x + Y1, 5, 5);
+            pnlGraph.CreateGraphics().FillEllipse(Brushes.White, -1 * y + X1, -1 * x + Y1, 5, 5);
+            // pnlGraph.CreateGraphics().FillClosedCurve(Brushes.White, -1 * y + X1, -1 * x + Y1, 5, 5);
+        }
+
+
+        private void MidPoint(int X1, int Y1, int r)
+        {
+            int P = 1 - r;
+            int x = 0;
+            int y = r;
+            while (x <= y)
             {
-                x++;
-                if (Di < 0)
-                    Di = Di + (2 * dy);
-
+                DrawPixels(x, y, X1, Y1);
+                if (P < 0)
+                {
+                    P = P + (2 * (x - y) + 5);
+                    x++;
+                }
                 else
                 {
-                    Di = Di + Dd;
-                    y++;
+                    P += (2 * (x - y)) + 5;
+                    x++;
+                    y--;
                 }
-                pnlGraph.CreateGraphics().FillRectangle(Brushes.White, x, y, 5, 5);
-
             }
-
 
         }
         private void btnDraw_Click(object sender, EventArgs e)
@@ -48,10 +69,8 @@ namespace Dilevered_project_Graphics
             {
                 int X1 = int.Parse(txtX1.Text);
                 int Y1 = int.Parse(txtY1.Text);
-                int X2 = int.Parse(txtX2.Text);
-                int Y2 = int.Parse(txtY2.Text);
-
-                MidPoint(X1, Y1, X2, Y2);
+                int r = int.Parse(txtRadius.Text);
+                MidPoint(X1, Y1, r);
             }
             catch (Exception ex)
             {

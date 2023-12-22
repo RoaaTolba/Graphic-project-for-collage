@@ -30,11 +30,9 @@
         {
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtY2 = new System.Windows.Forms.TextBox();
-            this.txtX2 = new System.Windows.Forms.TextBox();
+            this.txtRadius = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,22 +60,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
-            this.label5.Location = new System.Drawing.Point(506, 641);
+            this.label5.Location = new System.Drawing.Point(385, 642);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(15, 20);
             this.label5.TabIndex = 54;
             this.label5.Text = ")";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
-            this.label6.Location = new System.Drawing.Point(380, 642);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 20);
-            this.label6.TabIndex = 53;
-            this.label6.Text = ",";
             // 
             // label7
             // 
@@ -95,27 +82,19 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
-            this.label8.Location = new System.Drawing.Point(208, 641);
+            this.label8.Location = new System.Drawing.Point(174, 642);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 20);
+            this.label8.Size = new System.Drawing.Size(63, 20);
             this.label8.TabIndex = 51;
-            this.label8.Text = "P2";
+            this.label8.Text = "Radius";
             // 
-            // txtY2
+            // txtRadius
             // 
-            this.txtY2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtY2.Location = new System.Drawing.Point(409, 642);
-            this.txtY2.Name = "txtY2";
-            this.txtY2.Size = new System.Drawing.Size(91, 23);
-            this.txtY2.TabIndex = 50;
-            // 
-            // txtX2
-            // 
-            this.txtX2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtX2.Location = new System.Drawing.Point(278, 642);
-            this.txtX2.Name = "txtX2";
-            this.txtX2.Size = new System.Drawing.Size(91, 23);
-            this.txtX2.TabIndex = 49;
+            this.txtRadius.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRadius.Location = new System.Drawing.Point(277, 642);
+            this.txtRadius.Name = "txtRadius";
+            this.txtRadius.Size = new System.Drawing.Size(91, 23);
+            this.txtRadius.TabIndex = 49;
             // 
             // label4
             // 
@@ -155,11 +134,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(53)))), ((int)(((byte)(63)))));
-            this.label1.Location = new System.Drawing.Point(208, 606);
+            this.label1.Location = new System.Drawing.Point(130, 606);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 20);
+            this.label1.Size = new System.Drawing.Size(107, 20);
             this.label1.TabIndex = 45;
-            this.label1.Text = "P1";
+            this.label1.Text = "Center point";
             // 
             // txtY1
             // 
@@ -205,11 +184,9 @@
             this.ClientSize = new System.Drawing.Size(1117, 692);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtY2);
-            this.Controls.Add(this.txtX2);
+            this.Controls.Add(this.txtRadius);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -230,11 +207,9 @@
 
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtY2;
-        private System.Windows.Forms.TextBox txtX2;
+        private System.Windows.Forms.TextBox txtRadius;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
